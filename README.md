@@ -69,6 +69,16 @@ you also can import it like that
 import { t } from 'languee'
 ```
 
+\* If you are using React Native
+
+```
+const { t } = require('languee/native')
+```
+you also can import it like that
+```
+import { t } from 'languee/native'
+```
+
 to use it simply
 ```
 console.log(t(`Hello World`)) // this will print "Olá mundo!" because my locale is pt_BR
