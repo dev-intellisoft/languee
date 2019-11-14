@@ -44,7 +44,7 @@ const load = ( my_locale ) =>
     }
     catch (e)
     {
-        const translations = require('../locales/index')
+        const translations = require('locales/index')
         return translations[`${my_locale || getLocale()}_${getFile()}`] || {}
     }
 }
