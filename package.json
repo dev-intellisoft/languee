@@ -1,6 +1,6 @@
 {
   "name": "languee",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "It is a very simple way to translate texts",
   "main": "index.js",
   "bin": {
