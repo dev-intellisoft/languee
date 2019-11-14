@@ -1,10 +1,12 @@
 # languee
-It is a very simple way to translate texts.
+* DESCRIPTION
 
-It was created by the need I had to translate text by just type them directly without creating 
-key with strange names like "lbl_username", "txt_username" or something like that.
+It is a very simple way to work with multi language projects.
 
-I really get pain when I need to create keys. 
+It was created by the need I had to translate text by just typing them directly without creating 
+key with weird names like "lbl_username", "txt_username" or something like that.
+
+I always got in trouble when I need to create keys. 
 
 
 * INSTALLATION
@@ -15,15 +17,15 @@ or
 
 * PROJECT DIRECTORY
 
-After the installation you need create a folder called 
-"locales" and inside it you can create locales folders
+After the installation, you need to create a folder called 
+"locales" in the root of your project and inside it locales folders.
 
 For example:
  * en_US for United State English
  * pt_BR for Brazilian Portuguese
  * zh_CN for Chinese
  
-Once all file structure was set you can create *.json files
+Once all file structure set, you can create *.json files
 for every locale.
 
 For example:
@@ -51,7 +53,7 @@ like this:
         └── hello.json
 ```
 
-if you are use mobile and/or web project you need assemble you locale files
+if you use mobile and/or web project you need assemble you locale files
 by run `yarn run languee` or `npm run languee`
 
 * USAGE
@@ -72,7 +74,7 @@ to use it simply
 console.log(t(`Hello World`)) // this will print "Olá mundo!" because my locale is pt_BR
 ```
 
-You also can change my computer locale for another one simply 
+You can also change computer locale for another one simply 
 calling "setLocale" function
 
 For example:
@@ -85,7 +87,7 @@ setLocale(`zh_CN`)
 console.log(t(`Hello World`)) //this should print 你好世界!
 ```
 
-You alson can change the files have all the translations by
+You can also change the files have all the translations by
 calling setFile function
 
 For example:
