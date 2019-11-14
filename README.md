@@ -1,4 +1,4 @@
-# text.js
+# languee
 It is a very simple way to translate texts.
 
 It was created by the need I had to translate text by just type them directly without creating 
@@ -9,9 +9,9 @@ I really get pain when I need to create keys.
 
 * INSTALLATION
 
-`yarn add @dev-intellisoft/text.js` 
+`yarn add languee` 
 or 
-`npm i @dev-intellisoft/text.js`
+`npm i languee`
 
 * PROJECT DIRECTORY
 
@@ -60,11 +60,11 @@ Now it is time to code...
 
 The follow code will be necessary:
 ```
-const { t } = require('@dev-intellisoft/text.js')
+const { t } = require('languee')
 ```
 you also can import it like that
 ```
-import { t } from '@dev-intellisoft/text.js'
+import { t } from 'languee'
 ```
 
 to use it simply
@@ -78,7 +78,7 @@ calling "setLocale" function
 For example:
 
 ```
-const { t, setLocale } = require('@dev-intellisoft/text.js')
+const { t, setLocale } = require('languee')
 //now I can simply
 setLocale(`zh_CN`)
 
@@ -99,7 +99,7 @@ console.log(t(`Hello World`, {}, `zh_CN`)) // this should print "你好世界!"
 
 Full example:
 ```
-const { t, setLocale, setFile } = require('@dev-intellisoft/text.js')
+const { t, setLocale, setFile } = require('languee')
 
 setLocale(`pt_BR`)
 setFile(`hello`)
