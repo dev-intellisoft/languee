@@ -11,10 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dev-intellisoft/text.js.git"
+    "url": "git+ssh://git@github.com/dev-intellisoft/languee"
   },
   "keywords": [
     "text.js",
+    "languee",
     "translator",
     "node",
     "js"
@@ -26,9 +27,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dev-intellisoft/text.js/issues"
+    "url": "https://github.com/dev-intellisoft/languee/issues"
   },
-  "homepage": "https://github.com/dev-intellisoft/text.js#readme",
+  "homepage": "https://github.com/dev-intellisoft/languee#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
     "glob": "^7.1.6"
