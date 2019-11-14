@@ -40,23 +40,23 @@ Once you get here you you might have a file structure
 like this:
 
 ```bash
-src
+.
 ├── index.js
-└── locales 
-    ├── en_US
-    │   └── hello.json
-    ├── pt_BR
-    │   └── hello.json
-    └── zh_CN
-        └── hello.json
-
+└── locales
+    ├── en_US
+    │   └── hello.json
+    ├── pt_BR
+    │   └── hello.json
+    └── zh_CN
+        └── hello.json
 ```
 
+if you are use mobile and/or web project you need assemble you locale files
+by run `yarn run languee` or `npm run languee`
 
 * USAGE
 
 Now it is time to code...
-
 
 The follow code will be necessary:
 ```
