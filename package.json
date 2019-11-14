@@ -1,0 +1,48 @@
+{
+  "name": "languee",
+  "version": "1.0.0",
+  "description": "It is a very simple way to translate texts",
+  "main": "index.js",
+  "bin": {
+    "languee": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dev-intellisoft/text.js.git"
+  },
+  "keywords": [
+    "text.js",
+    "translator",
+    "node",
+    "js"
+  ],
+  "author": {
+    "name": "Wellington Cunha",
+    "email": "wellington@programer.com.br",
+    "url": "https://www.programer.com.br/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev-intellisoft/text.js/issues"
+  },
+  "homepage": "https://github.com/dev-intellisoft/text.js#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}
