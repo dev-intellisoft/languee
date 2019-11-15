@@ -3,7 +3,7 @@
     languee
   </a>
 </h1>
-* DESCRIPTION
+<h5>DESCRIPTION</h5>
 
 <p align="center">
     <strong>It is a very simple and scalable way to work with multi language projects.</strong><br>
