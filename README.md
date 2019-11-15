@@ -12,9 +12,9 @@
 
 <p align="center">
     <a href="https://github.com/dev-intellisoft/languee/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="languee is released under the MIT license." />
   </a>
-  <a href="https://www.npmjs.org/package/react-native">
+  <a href="https://github.com/dev-intellisoft/languee/">
       <img src="https://badge.fury.io/js/languee.svg" alt="Current npm package version." />
     </a>
 </p>
