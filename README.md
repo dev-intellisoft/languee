@@ -14,7 +14,7 @@
     <a href="https://github.com/dev-intellisoft/languee/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="languee is released under the MIT license." />
   </a>
-  <a href="https://github.com/dev-intellisoft/languee/">
+  <a href="https://www.npmjs.com/package/languee">
       <img src="https://badge.fury.io/js/languee.svg" alt="Current npm package version." />
     </a>
 </p>
