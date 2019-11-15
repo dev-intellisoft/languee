@@ -4,13 +4,33 @@ const path = require('path');
 var locale = new Intl.DateTimeFormat().resolvedOptions().locale.replace(`-`, `_`)
 var directory = `locales`
 var file = `main`
+var maps = []
 
 const setLocale = ( l ) =>  locale = l
 const setDirectory = ( d ) => directory = d
 const setFile = ( f ) => file = f
 
+const getDirectory = () => directory
+const getFile = () => file
+const getLocale = () => locale
+const setMaps = ( main_locale,  locales = [] ) => maps.push({[main_locale]:[ ...locales]})
+
+const map = ( l ) =>
+{
+    for ( let [okey, ovalue] of Object.entries(maps))
+        for ( let [lkey, lvalue] of Object.entries(ovalue))
+            if ( lvalue.indexOf(l) !== -1 )
+                l = lkey
+
+    return l
+}
+
 const load = ( my_locale ) =>
 {
+    let _locale = my_locale || getLocale()
+
+    _locale = map(_locale)
+
     try
     {
         let dir = path.dirname(require.main.filename);
@@ -18,7 +38,7 @@ const load = ( my_locale ) =>
 
         if ( fs.existsSync(dir) )
         {
-            dir = `${dir}/${my_locale || getLocale()}`
+            dir = `${dir}/${_locale}`
             if ( fs.existsSync(dir) )
             {
                 dir = `${dir}/${getFile()}.json`
@@ -28,30 +48,33 @@ const load = ( my_locale ) =>
                 }
                 else
                 {
-                    console.error(`Directory no found '${dir}' in your project!`)
+                    throw(`Directory no found '${dir}' in your project!`)
                 }
             }
             else
             {
-                console.error(`Directory '${dir}' not found in your project!`)
+                throw(`Directory '${dir}' not found in your project!`)
             }
 
         }
         else
         {
-            console.error(`Directory '${dir}' not found  on the root of your project!`)
+            throw(`Directory '${dir}' not found  on the root of your project!`)
         }
     }
     catch (e)
     {
-        const translations = require('../../locales/index')
-        return translations[`${my_locale || getLocale()}_${getFile()}`] || {}
+        try
+        {
+            const translations = require('../../locales/index')
+            return translations[`${_locale}_${getFile()}`] || {}
+        }
+        catch (e)
+        {
+            return {}
+        }
     }
 }
-
-const getDirectory = () => directory
-const getFile = () => file
-const getLocale = () => locale
 
 const t = ( text, arr = {}, locale = null ) =>
 {
@@ -66,5 +89,5 @@ const t = ( text, arr = {}, locale = null ) =>
 }
 
 module.exports = {
-    t, setLocale, setDirectory, setFile, getDirectory, getFile, getLocale
+    t, setLocale, setDirectory, setFile, getDirectory, getFile, getLocale, setMaps
 }
