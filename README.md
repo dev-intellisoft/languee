@@ -16,7 +16,10 @@
   </a>
   <a href="https://www.npmjs.com/package/languee">
       <img src="https://badge.fury.io/js/languee.svg" alt="Current npm package version." />
-    </a>
+  </a>
+  <a href="https://ci.appveyor.com/project/dev-intellisoft/languee/branch/master">
+    <img src="https://ci.appveyor.com/api/projects/status/jjc5e68b3lg3froi/branch/master?svg=true" alt="Current Appveyor build status." />
+  </a>
 </p>
 
 

@@ -1,6 +1,6 @@
 {
   "name": "languee",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "It is a very simple way to translate texts",
   "main": "index.js",
   "bin": {
@@ -14,11 +14,15 @@
     "url": "git+ssh://git@github.com/dev-intellisoft/languee"
   },
   "keywords": [
-    "text.js",
     "languee",
+    "i18n",
     "translator",
     "node",
-    "js"
+    "js",
+    "multi language",
+    "internationalization",
+    "text.js",
+    "locales"
   ],
   "author": {
     "name": "Wellington Cunha",
