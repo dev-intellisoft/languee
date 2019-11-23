@@ -1,7 +1,10 @@
-// const fs = require('fs')
-// const path = require('path');
+'use strict';
 
-var locale = new Intl.DateTimeFormat().resolvedOptions().locale.replace(`-`, `_`)
+import { NativeModules } from 'react-native'
+
+const { RNLanguages } = NativeModules;
+
+var locale = RNLanguages.language
 var directory = `locales`
 var file = `main`
 var maps = []
