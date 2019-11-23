@@ -22,6 +22,8 @@
   </a>
 </p>
 
+<h5>VIDEO TUTORIAL</h5>
+https://www.youtube.com/watch?v=tB6Sv4WS9WY&t=38s
 
 <h5>INTRODUCTION</h5>
 <article align="center">
