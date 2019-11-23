@@ -1,7 +1,7 @@
 {
   "name": "languee",
   "version": "1.2.7",
-  "description": "It is a very simple way to translate texts",
+  "description": "The most and powerfull way to work with multi language project",
   "main": "index.js",
   "bin": {
     "languee": "bin/cli.js"
@@ -15,14 +15,17 @@
   },
   "keywords": [
     "languee",
-    "i18n",
-    "translator",
-    "node",
-    "js",
     "multi language",
     "internationalization",
-    "text.js",
-    "locales"
+    "i18n",
+    "locales",
+    "language",
+    "languages",
+    "translator",
+    "idiom",
+    "node",
+    "js",
+    "text.js"
   ],
   "author": {
     "name": "Wellington Cunha",
