@@ -23,6 +23,8 @@
 </p>
 
 <h5>VIDEO TUTORIAL</h5>
+
+<p>I hope this  20 minutes video can save years of your life ... ;)</p>
 https://www.youtube.com/watch?v=tB6Sv4WS9WY&t=38s
 
 <h5>INTRODUCTION</h5>
