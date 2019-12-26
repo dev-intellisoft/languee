@@ -5,6 +5,12 @@ import { NativeModules } from 'react-native'
 const { RNLanguages } = NativeModules;
 
 var locale = RNLanguages.language
+
+if ( !locale.includes(`_`) || !locale.includes(`-`) )
+    locale = `en_US`
+if ( locale.includes(`-`) )
+    locale = locale.replace(`-`, `_`)
+
 var directory = `locales`
 var file = `main`
 var maps = []
