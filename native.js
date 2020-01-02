@@ -4,7 +4,7 @@ import { NativeModules } from 'react-native'
 
 const { RNLanguages } = NativeModules;
 
-var locale = RNLanguages.language
+var locale = RNLanguages?RNLanguages.language:`en_US`
 
 if ( !locale.includes(`_`) || !locale.includes(`-`) )
     locale = `en_US`
